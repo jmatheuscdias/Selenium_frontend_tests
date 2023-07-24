@@ -31,7 +31,7 @@ def test_drag_n_drop():
     
     # Firstly, defining the string value inside the <header> tag from the div at the first position, then confirming we got the right value, which we already know it should be "A" 
     first_child_header = child_divs[0].find_element(By.TAG_NAME, "header")
-    print("\nChild header value: " + first_child_header.text)
+    print("\nFirst_child header value: " + first_child_header.text)
     assert "A" in first_child_header.text
 
     # Manipulating the components using a drag and drop action from the 'seletools' library [https://pypi.org/project/seletools], as the tries using native action functions weren't successful
@@ -39,7 +39,7 @@ def test_drag_n_drop():
     
     # Defining, after the drag and drop, the content in the <header> tag from the div at the first position, which should be now the value previously owned by the div at the second position, before the drag and drop action was performed. The value obtained now should be "B"
     first_child_header = child_divs[0].find_element(By.TAG_NAME, "header")
-    print("New child header value: " + first_child_header.text)
+    print("New first_child header value: " + first_child_header.text)
 
     # Asserting if the value is now, in fact, "B"
     assert "B" in first_child_header.text
