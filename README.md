@@ -1,9 +1,9 @@
-# the_internet
+# Selenium front-end web testing using The Internet toolbox
 
 First of all, you can clone the repository by running on your terminal (Powershell on Windows) the following command:
 
 ```
-git clone https://github.com/jmatheuscdias/the_internet.git
+git clone https://github.com/jmatheuscdias/Selenium_frontend_tests.git
 ```
 Then, procceed to the following steps
 
